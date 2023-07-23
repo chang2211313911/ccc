@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>牛逼人干牛逼事</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+    html,body{
+    background-color: aqua;
+	}
+	button{
+		height: 40px;
+		width: 75px;
+	}
+</style>
+<script>
+	function tx(){
+			  window.open("https://v.qq.com/")
+	}
+	function aqy(){
+			  window.open("https://www.iqiyi.com/")
+	}
+	function yk(){
+			 window.open("https://youku.com/")
+	}
+	function mg(){
+			 window.open("https://www.mgtv.com/")
+	}
+	  
+	function get1(){
+			  window.open("https://jx.jsonplayer.com/player/?url="+document.getElementById("input").value)
+	}
+	function get2(){
+			  window.open("https://jx.xyflv.com/?url="+document.getElementById("input").value)
+	}
+	function get3(){
+			 window.open("https://www.nxflv.com/?url="+document.getElementById("input").value)
+	}
+	function get4(){
+			 window.open("https://im1907.top/?jx="+document.getElementById("input").value)
+	}
+	function clearfunc(){
+		document.getElementById("input").value =''
+	}
+	function readClipText(){
+	        var clipPromise = navigator.clipboard.readText();
+	        clipPromise.then(function(clipText){
+				document.getElementById("input").value=clipText
+	        }); 
+	    }
+  </script>
+  </head>
+  <body>
+	  <h1 style="color: purple;">666视频解析666</h1>
+      <button onclick="tx()">腾讯视频</button>
+	  <button onclick="aqy()">爱奇艺</button>
+	  <button onclick="yq()">优酷</button>
+	  <button onclick="mg()">芒果TV</button>
+	  <br><br><br><br>
+	  视频链接网址填这里
+	  <button onclick="clearfunc()" id="clear">清空</button>
+	  <button onclick="readClipText()" id="paste">粘贴</button>
+	  <br>
+	  <textarea type="text"/ id="input" rows="5" cols="40"></textarea>
+	  <br><br><br><br>
+	  <button onclick="get1()">线路一</button>
+	  <button onclick="get2()">线路二</button>
+	  <button onclick="get3()">线路三</button>
+	  <button onclick="get4()">线路四</button>
+  </body>
+</html>
